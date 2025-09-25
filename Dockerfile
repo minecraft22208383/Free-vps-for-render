@@ -1,5 +1,5 @@
 # Use an official Node.js image (includes npm)
-FROM alpine:lastest
+FROM alpine:latest
 
 # Install dependencies
 RUN apt-get update && \
