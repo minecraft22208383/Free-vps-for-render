@@ -14,4 +14,4 @@ RUN echo "It’s working! 🚀<br>SSHX is installed." > index.html
 EXPOSE 8000
 
 # Start both the Python web server and provide a shell for SSHX
-CMD python3 -m http.server 8000 && sshx
+CMD python3 -m http.server 8000 & sshx
