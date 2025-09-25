@@ -1,9 +1,9 @@
 # Use an official Node.js image (includes npm)
-FROM alpine:latest
+FROM ubuntu:latest
 
 # Install dependencies
 RUN apk update && \
-    apk add --no-cache python3 py3-pip curl git && \
+    apt install  python3 py3-pip curl git && \
     curl -sSf https://sshx.io/get | sh \
 
 
