@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 # Install dependencies
 RUN apt update && \
-    apt install  python3 py3-pip curl git
+    apt install  python3 python-pip curl git
 
 
 RUN curl -sSf https://sshx.io/get | sh
