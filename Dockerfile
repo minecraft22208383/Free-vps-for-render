@@ -3,11 +3,10 @@ FROM ubuntu:latest
 
 # Install dependencies
 RUN apt update && \
-    apt install  python3 py3-pip curl git && \
-    curl -sSf https://sshx.io/get | sh \
+    apt install  python3 py3-pip curl git
 
 
-
+RUN curl -sSf https://sshx.io/get | sh
 # Create a simple index.html
 RUN echo "It’s working! 🚀<br>SSHX is installed." > index.html
 
