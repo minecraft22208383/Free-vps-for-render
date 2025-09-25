@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 # Install dependencies
-RUN apt-get update && \
+RUN apk update && \
     apk add --no-cache python3 py3-pip curl git && \
     curl -sSf https://sshx.io/get | sh \
 
